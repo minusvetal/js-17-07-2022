@@ -17,7 +17,7 @@
 // Код возьмите из предыдущего домашнего задания
 
 const numberOfFilms = +prompt(
-	"Яку кількість фільмів подивились?!",
+	"Яку кількість фильмів подивились?!",
 	"Тут тілько цифри"
 );
 
@@ -52,12 +52,12 @@ if (
 	personalMovieDB.count === null ||
 	personalMovieDB.count === 0
 ) {
-	console.log("Треба ввести кількість фільмів!");
+	console.log("Треба ввести кількість фильмів!");
 } else if (personalMovieDB.count <= 10) {
-	console.log("Замало дивися фільмів! Усього:, personalMovieDB.count");
+	console.log("Замало дивися фильмів! Усього:", personalMovieDB.count);
 } else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
-	console.log("Взагалі не пагано:, personalMovieDB.count");
+	console.log("Взагалі не пагано:", personalMovieDB.count);
 } else if (personalMovieDB.count > 30) {
-	console.log("Та Ви знаток фільмів:, personalMovieDB.count 'шт.'");
+	console.log("Та Ви знаток фильмів:", personalMovieDB.count, "шт.");
 }
-console.log("Все что ввел из файл 018", personalMovieDB);
+// console.log("Все что ввел из файл 018", personalMovieDB);
