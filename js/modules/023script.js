@@ -16,13 +16,13 @@ function start() {
 	numberOfFilms = +prompt(
 		"Яку кількість фильмів подивились?!",
 		"Тут тілько цифри"
-	);
+	).trim();
 
 	while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
 		numberOfFilms = +prompt(
 			"Яку кількість фильмів подивились?!",
-			"Тут тілько цифри"
-		);
+			"Треба щось ввести!!!"
+		).trim();
 	}
 }
 // start();
@@ -37,7 +37,7 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
 	for (let i = 0; i < 2; i++) {
-		let a = prompt("Яке останнє кіно дивилися?", "Не більш 50 знаків"),
+		let a = prompt("Яке останнє кіно дивилися?", "Не більш 50 знаків").trim(),
 			b = +prompt("Як оціните від 0 до 10?", "Тілько цифрами");
 
 		if (
@@ -54,7 +54,7 @@ function rememberMyFilms() {
 		}
 	}
 }
-// rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
 	if (
@@ -84,7 +84,7 @@ function showMyDB(hidden) {
 
 function writeYourGenres() {
 	for (let i = 0; i < 3; i++) {
-		let genre = prompt(`Ваш юлюблений жанр № ${i + 1}`, "");
+		let genre = prompt(`Ваш юлюблений жанр № ${i + 1}`, "").trim();
 		if (genre != null && genre != "" && genre.length <= 50) {
 			personalMovieDB.genres[i] = genre;
 		} else {
@@ -93,4 +93,6 @@ function writeYourGenres() {
 	}
 	console.log("Жанри користувача", personalMovieDB.genres);
 }
-writeYourGenres();
+// writeYourGenres();
+
+console.log("Всі данні", personalMovieDB);
