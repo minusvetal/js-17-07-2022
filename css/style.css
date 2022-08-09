@@ -3,5 +3,7 @@ body {
 }
 
 .header {
+  padding: 10px;
   background-color: rgba(114, 64, 97, 0.295);
+  border: 2px dotted orchid;
 }/*# sourceMappingURL=style.css.map */

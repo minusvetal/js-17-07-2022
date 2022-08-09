@@ -1,3 +1,7 @@
+
+// https://proglib.io/p/uchebnik-po-javascript-rabota-s-obektami-2022-08-07
+
+
 const options = {
 	d: "2",
 	f: 1024,
