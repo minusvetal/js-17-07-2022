@@ -6,4 +6,5 @@
 // import "./modules/arr.js";
 // import "./modules/oop.js";
 // import "./modules/dynamTipizacia.js";
-import "./modules/zamikanie_leksiceskoeOkrugenie.js";
+// import "./modules/zamikanie_leksiceskoeOkrugenie.js";
+import "./modules/event.js";
